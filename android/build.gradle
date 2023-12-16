@@ -2,20 +2,22 @@ group 'org.leanflutter.plugins.flutter_svprogresshud'
 version '1.0'
 
 buildscript {
-    repositories {
-        google()
-        jcenter()
-    }
+  ext.kotlin_version = '1.7.10'
+  repositories {
+    google()
+    mavenCentral()
+  }
 
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
-    }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:8.2.0'
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+  }
 }
 
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+      mavenCentral()
     }
 }
 
